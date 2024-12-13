@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
@@ -49,7 +49,7 @@ const ForgotPassword = () => {
                   <button type="submit" className="btn btn-primary">Send Reset Link</button>
                 </div>
                 <div className="form-text text-center mt-3">
-                  <a href="/login">Back to Login</a>
+                  <Link to="/login">Back to Login</Link>
                 </div>
               </form>
             </div>
